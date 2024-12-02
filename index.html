@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal </title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'gilroy';
+        }
+        .body{
+            height: 100%;
+            width: 100%;
+        }
+        /* .body::-webkit-scrollbar{ */
+            /* background-color: transparent; */
+        /* } */
+        /* .body::-webkit-scrollbar-thumb{ */
+            /* background:linear-gradient(red,blue,green); */
+            /* border-radius: 20px; */
+        /* } */
+        .main{
+            background-color: lightyellow;
+            height: 100%;
+            width: 100%;
+            /* box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.915),inset */
+            /* -20px -20px 60px rgba(255, 255, 255, 0.416); neuromorphism
+             */
+        }
+         .nav{
+             position: fixed;
+             width: 100%;
+             padding:30px 40px;
+             display: flex;
+             align-items: center;
+             justify-content: end;
+         }
+        
+         .nav button{
+            border: none;
+            border-radius: 50px;
+            padding: 10px 20px;
+            font-size: 20px;
+            color: white;
+            background-color: rgb(123, 74, 212);
+            transition: all ease 1s;
+          }
+          .nav button:hover{
+               box-shadow: 5px 5px 0px black;
+          }
+          .heading{
+            padding: 10px;
+            height: 45%;
+            width: 100%;
+            margin-bottom: 10px;
+          }
+        
+          .heading h1{
+             font-size: 110px;
+             /* line height property is used for increasing and decreasing the gap between two word in same tag */
+             line-height: 100px;
+             letter-spacing: -3px;
+             background: linear-gradient(to right, red, blue);
+             color: transparent;
+             -webkit-background-clip: text;
+             text-shadow: 0px 0px 40px rgba(255, 0, 0, 0.519);
+              animation: anime 1s infinite alternate;
+          }
+          @keyframes anime {
+                 100%{
+                    text-shadow: 0px 0px 40px rgba(0, 0, 255, 0.368);
+
+                 }
+          }
+
+
+          .place{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px;
+          }
+          .place h3, h4{
+                font-size:20px;
+                color: black;
+          }
+          .hero{
+            
+            height:70vh;
+            width:100%;
+            background-size: cover;
+            background-position: center;
+            background-image: url(portfolio.png);
+            transition: all ease 2s;
+            
+          }
+          .hero:hover{
+              overflow: hidden;
+              transform: scale(1.1);
+          }
+    
+          .about{
+    
+            border-bottom: 2px solid lightgrey ;
+            padding:30px 30px;
+            height: 50vh;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .left{
+            padding: 2rem 2rem;
+            height: 100%;
+            width: 70%;
+            border-right: 4px solid lightgrey;
+            font-size: 25px;
+            display: flex;
+            align-items: center;
+          }
+          .left h3{
+             width:80%;
+             text-align: center;
+          }
+    
+          .right{
+            padding: 1.5rem;
+            height: 100%;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            }
+    
+            .right h3{
+                font-size: 22px;
+                font-weight: bolder;
+            }
+
+            .icon {
+                display: flex;
+                gap: 10px;
+
+            }
+            .icon a{
+                text-decoration: none;
+                color: black;
+            }
+
+            .skill{
+                border-bottom: 2px solid lightgrey;
+                 padding: 30px 40px;
+                 height:70%;
+                 width: 100%;
+                 display: flex;
+                 justify-content: space-around;
+                 align-items: center;
+            }
+            .Left{
+                border-right: 4px solid lightgrey;
+                padding: 2rem 2rem;
+                height: 50vh;
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+            .Left h2{
+                 color:rgb(104, 37, 172);
+                 font-size:50px;
+                 font-weight:25px;
+                 transition: all ease 1s;
+            }
+          
+            .Left h2:hover{
+                transform: scale(1.1);
+                color: rgb(65, 36, 160);
+            }
+           
+            .Right{
+                padding: 2rem 2.5rem;
+                height: 100%;
+                width: 50%;
+                overflow: hidden;
+            }
+            .Right ul{
+                list-style: none;
+                font-size: 22px;
+               
+            }
+            .Right ul li{
+                 margin-top:7px;
+                 transition: all ease 1s;
+                 
+            }
+            .Right ul li:hover{
+                color: rgb(216, 37, 67);
+                transform: scale(1.1);
+            }
+            .Certification{
+                     padding:40px 40px;
+                     width: 100%;
+                     height:50%;
+                     text-align: center;
+                     border-bottom: 4px solid lightgrey;
+                    
+
+            }
+            .top{
+                text-align: center;
+                margin-bottom:20px;
+            }
+            .top h2{
+                 font-size:50px;
+                 font-weight:25px;
+                 color: rgb(93, 31, 151);
+                 transition: all ease 1s;
+            }
+            .top h2:hover{
+                transform: scale(1.1);
+                color: rgb(33, 17, 88);
+            }
+            .Middle-section{
+                 padding: 40px 40px;
+                 width: 50%;
+                 height: 100%;
+                 margin: 0 auto;
+                 display: grid;
+                 gap: 27px;
+                 grid-template-columns: repeat(2,1fr);
+                 
+            }
+    
+           .Middle-section img{
+              border: 7px solid rgb(123, 28, 123);
+             height: 300px;
+             width: 300px;
+             transition: all ease-in-out 1s;
+             
+           }
+        
+           .Middle-section img:hover{
+               filter:grayscale(100%);
+               transform: scale(1.1);
+           }
+           .contact-me{
+               padding: 40px 40px;
+               width: 100%;
+               height: 100%;
+               border-bottom: 4px solid lightgrey;
+               display: flex;
+               justify-content: space-around;
+
+           } 
+           .left-side{
+               width: 50%;
+               height: 40vh;
+               padding: 10px 10px;
+               border-right: 4px solid lightgrey;
+               justify-content: center;
+               align-items: center;
+           }
+           .heading p{
+               width: 40%;
+               font-weight: bolder;
+               font-size: 45px;
+               color: rgb(104, 37, 172);
+                justify-content: center;
+               transition: all ease 1s;
+               
+           }
+           .heading p:hover{
+               transform: scale(1.1);
+               color: rgb(65, 36, 160);
+           }
+           .info{
+               height: 100%;
+               width: 40%;
+               text-align: center;
+           }
+           .email{
+            margin-bottom:10px;
+            display: flex;
+            transition: all ease 1s;
+           }
+           .email h3 i{
+             margin-right: 7px;
+           }
+           .email:hover{
+             color: rgb(207, 30, 54);
+             transform: scale(1.1);
+           }
+           .email a{
+             text-decoration: none;
+           }
+          
+           .phone{
+            margin-bottom: 10px;
+            display: flex;
+            transition: all ease 1s;
+           }
+           .phone h3 i{
+             margin-right: 7px;
+           }
+           .phone:hover{
+             color: rgb(207, 30, 54);
+             transform: scale(1.1);
+           }
+           .right-side{
+               padding: 10px 10px;
+               width: 50%;
+               height: 100%;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               
+               
+           }
+           .grow{
+               flex-grow: 1;
+           }
+           .Input{
+              
+               margin-bottom: 10px;
+               padding: 10px 10px;
+               width: 100%;
+               border-radius: 7px;
+               border: none;
+               background-color: lightgrey;
+              
+           }
+           .Input::placeholder{
+               color: black;
+               font-size: 15px;
+           }
+           
+           .Send-button{
+             border: none;
+             border-radius:50px;
+             padding: 1rem 2rem;
+             background-color: royalblue;
+             transition: all ease 1s;
+           }
+           .Send-button:hover{
+               box-shadow: 5px 5px 0px rgb(3, 2, 6);
+           }
+    </style>
+</head>
+<body>
+     <div class="main">
+          <div class="nav">
+              <a href="./Neetu Sharma resume.pdf" download="resume">
+                <button>Download CV</button>
+               </a>
+          </div>
+          <div class="heading">
+               <h1>Neetu Sharma <br>Frontend Developer</h1>
+               <div class="place">
+                 <h3>(Chandigarh,India)</h3>
+                 <h4><i class="ri-arrow-right-down-line"></i>Scroll Down</h4>
+               </div>
+                
+          </div>
+          <div class="hero">
+          </div>
+          <div class="education"></div>
+          <div class="about">
+               <div class="left">
+                   <h3>Aspiring front-end developer with a strong web development foundation and a passion for learning. I seek to leverage my skills and certifications to contribute to dynamic and innovative projects.
+                </h3>
+               </div>
+               <div class="right">
+                  <h3>(ABOUT ME)</h3>
+                   <div class="icon">
+                    <i class="ri-instagram-line"></i>
+                    <a href="https://github.com/neer9878"><i class="ri-github-fill"></i></a>
+                    <i class="ri-twitter-x-line"></i>
+                   </div>
+                   
+               </div>
+          </div>
+          <div class="skill">
+              <div class="Left">
+                 <h2>Technologies & Tools</h2>
+              </div>
+              <div class="Right">
+                 <ul>
+                    <li><i class="ri-circle-line"></i>HTML, CSS & JAVASCRIPT.</li>
+                    <li><i class="ri-circle-line"></i>Framework & Library-reactjs.</li>
+                    <li><i class="ri-circle-line"></i>Tools-GIT & GITHUB,VS CODE,Figma,Canva & Xampp.</li>
+                    <li><i class="ri-circle-line"></i>Digital Marketing & Wordpress.</li>
+                    <li><i class="ri-circle-line"></i>others-Elementor,Plugins ,mailchip & semrush.</li>
+                    <li><i class="ri-circle-line"></i>AI Tools-claud,Chatgp,gemini & others.</li>
+                 </ul>
+                 
+                 
+                    
+              </div>
+          </div>
+          <div class="Certification">
+              <div class="top">
+                   <h2>Certification</h2>
+              </div>
+              <div class="Middle-section">
+                     <img src="neetu web development.jpg" alt=""> 
+                     <img src="Screenshot (83).png" alt=""> 
+                     <img src="Screenshot (81).png" alt=""> 
+                     <img src="Screenshot (85).png" alt=""> 
+
+              </div>
+             
+          </div>
+          <div class="contact-me">
+             <div class="left-side">
+                 <div class="heading">
+                    <p>Contact me</p>
+                 </div>
+                <div class="info">
+                    <div class="email">
+                        <h3><i class="ri-mail-fill"></i>EMAIL:-</h3> 
+                        <a href="mailto:shneetu9878gmail.com"><h4>shneetu9878gmail.com</h4></a>
+                    </div>
+                    <div class="phone">
+                        <h3><i class="ri-phone-fill"></i>PHONE:-</h3>
+                        <h4>7710403338</h4>
+                    </div>
+                </div>
+             </div>
+             <div class="right-side">
+                <form class="grow" action="/action_page.php" target="_blank">
+                    <p><input class="Input" type="text" placeholder="Name" required name="Name"></p>
+                    <p><input class="Input" type="text" placeholder="Email" required name="Email"></p>
+                    <p><input class="Input" type="text" placeholder="Subject" required name="Subject"></p>
+                    <p><input class="Input" type="text" placeholder="Message" required name="Message"></p>
+                    <p>
+                      <button class="Send-button" type="submit">
+                        <i class="ri-send-plane-fill"></i>
+                         SEND MESSAGE
+                      </button>
+                    </p>
+                  </form>  
+             </div> 
+          </div>
+
+         
+    </div>
+</body>
+</html>
